@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+    box-sizing: border-box;
+    font-family: Roboto;
+    color: #ffffff;
+}
+
+body {
+    margin: 0px;
+}
+
+.main-container {
+    min-height: 100vh;
+    height: auto;
+    background-image: linear-gradient(#5a3f8c, #b96fa1);
+    background-size: cover;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.description-container {
+    margin-right: 50px;
+}
+
+.heading {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.claimate-name {
+    font-size: 20px;
+}
+
+.claimate-percentage {
+    font-size: 15px;
+}
+
+.logo-main {
+    height: 150px;
+    align-self: center;
+}
+
+.second-container {
+    background-color: #ffffff20;
+    border: 2px solid #e9e9e930;
+    border-radius: 25px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+
+.item-card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    padding: 15px;
+}
+
+.days {
+    font-size: 20px;
+}
+
+
+.logo-item {
+    height: 100px;
+}
+
+.first-claimate-number {
+    font-size: 20px;
+}
+
+.second-claimate-number {
+    font-size: 18px;
+}
+
+
+.name-claimate {
+    font-size: 20px;
+}
+
+hr {
+    color: #e9e9e930;
+}
+
+
+@media screen and (min-width:900px) {
+    .main-container {
+        flex-wrap: wrap;
+        align-items: flex-start;
+        background-image: linear-gradient(to top, #5a3f8c, #b96fa1);
+    }
+
+    .second-container {
+        background-color: transparent;
+        border: none;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    hr {
+        display: none;
+    }
+
+    .item-card-container {
+        flex-direction: column;
+        margin-right: 60px;
+    }
+
+    .celsius {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .first-claimate-number {
+        margin-right: 15px;
+    }
+}
